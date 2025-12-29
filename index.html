@@ -986,7 +986,7 @@
                 async initSystem() { 
                     try { this.supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY); } catch(e) {}
                     await this.fetchBooths();
-                    setInterval(() => this.fetchBooths(), 120000); // 2 MIN REFRESH
+                    setInterval(() => this.fetchBooths(), 1200000); // 2 MIN REFRESH
                     this.updateTransform(); this.refreshVisuals();
                 },
                 
@@ -1202,3 +1202,4 @@
 </body>
 
 </html>
+
